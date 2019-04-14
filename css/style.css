@@ -3,18 +3,26 @@
 	height: 60px;
 	margin: 10px auto 30px auto;
 	border: solid;
+  background-color: #99aab5;
+  color: #7289da;
+}
+
+body {
+  background-color: #2c2f33;
 }
 
 h1 {
   text-align: center;
   vertical-align: center;
   margin: 50px auto auto auto;
+  color: #7289da;
 }
 
 p {
   text-align: center;
   font-size: 15px;
   padding-top: 30px;
+  color: #7289da;
 }
 
 .playbutton {
@@ -23,14 +31,15 @@ p {
 	border: none;
 	float: left;
 	outline: none;
+  color: #7289da;
 }
 
 .play {
-	background: url('http://www.alexkatz.me/codepen/img/play.png');
+	background: url('../images/play.png');
 }
 
 .pause {
-	background: url('http://www.alexkatz.me/codepen/img/pause.png');
+	background: url('../images/pause.png');
 }
 
 .play,
@@ -54,6 +63,6 @@ p {
 	height: 18px;
 	border-radius: 50%;
 	margin-top: 1px;
-	background: rgba(0, 0, 0, 1);
+	background: #7289da;
 	cursor: pointer;
 }

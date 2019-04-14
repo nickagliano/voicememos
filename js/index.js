@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", theDOMHasLoaded, false);
 
 // array of audio files (stored in a folder called music)
 
-var files = ["again.m4a", // 0
+var files = [encodeURIComponent("again.m4a"), // 0
       encodeURIComponent("Sleeping Behind Golds Gym.m4a"), // 1
 			encodeURIComponent("alvvays concert.m4a"), // 2
       encodeURIComponent("Tomorrow By Shakey.m4a"), // 3
