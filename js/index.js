@@ -2,10 +2,19 @@
 document.addEventListener("DOMContentLoaded", theDOMHasLoaded, false);
 
 // array of audio files (stored in a folder called music)
-var files = ["interlude.mp3", // 0
-			"chooseyourweapon.mp3", // 1
-			"interlude.mp3", // 2
-			"scriptures.mp3" // 3
+
+var files = ["again.m4a", // 0
+      encodeURIComponent("Sleeping Behind Golds Gym.m4a"), // 1
+			encodeURIComponent("alvvays concert.m4a"), // 2
+      encodeURIComponent("Tomorrow By Shakey.m4a"), // 3
+			encodeURIComponent("People Before CompSci Class.m4a"), // 4
+			encodeURIComponent("capo on 2.m4a"), // 5
+      encodeURIComponent("cowboy song.m4a"), // 6
+      encodeURIComponent("No Certainty (Annie).m4a"), // 7
+      encodeURIComponent("No Certainty.m4a"), // 8
+      encodeURIComponent("rough capo 2 Himalayas.m4a"), // 9
+      encodeURIComponent("budapest.m4a"), // 10
+      encodeURIComponent("Windmill Dr.m4a") // 11
 			];
 
 ///////////////////////////////////////////////
@@ -212,7 +221,7 @@ function getPosition(el) {
  * create audio elements for each file in files */
 function createAudioElements() {
 	for (f in files) {
-		var audioString = "<audio id=\"audio-" + f + "\" class=\"audio\" preload=\"true\"><source src=\"http://www.alexkatz.me/codepen/music/" + files[f] + "\"></audio>";
+		var audioString = "<audio id=\"audio-" + f + "\" class=\"audio\" preload=\"true\"><source src=..\\voicememos\\memos\\" + files[f] + "></audio>";
 		$("#audio-players").append(audioString);
 	}
 }
@@ -221,7 +230,7 @@ function createAudioElements() {
  * create audio players for each file in files */
 function createAudioPlayers() {
 	for (f in files) {
-		var playerString = "<div id=\"audioplayer-" + f + "\" class=\"audioplayer\"><button id=\"playbutton-" + f + "\" class=\"play playbutton\"></button><div id=\"timeline-" + f + "\" class=\"timeline\"><div id=\"playhead-" + f + "\" class=\"playhead\"></div></div></div>";
+		var playerString = "<p>" + decodeURIComponent(files[f]) + "<div id=\"audioplayer-" + f + "\" class=\"audioplayer\"><button id=\"playbutton-" + f + "\" class=\"play playbutton\"></button><div id=\"timeline-" + f + "\" class=\"timeline\"><div id=\"playhead-" + f + "\" class=\"playhead\"></div></div></div>";
 		$("#audio-players").append(playerString);
 	}
 }

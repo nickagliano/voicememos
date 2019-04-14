@@ -1,8 +1,20 @@
 .audioplayer {
-	width: 480px;
+  width: 480px;
 	height: 60px;
-	margin: 50px auto auto auto;
+	margin: 10px auto 30px auto;
 	border: solid;
+}
+
+h1 {
+  text-align: center;
+  vertical-align: center;
+  margin: 50px auto auto auto;
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 30px;
 }
 
 .playbutton {
