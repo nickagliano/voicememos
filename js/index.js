@@ -221,7 +221,7 @@ function getPosition(el) {
  * create audio elements for each file in files */
 function createAudioElements() {
 	for (f in files) {
-		var audioString = "<audio id=\"audio-" + f + "\" class=\"audio\" preload=\"true\"><source src=..\\voicememos\\memos\\" + files[f] + "></audio>";
+		var audioString = "<audio id=\"audio-" + f + "\" class=\"audio\" preload=\"true\"><source src=..\\memos\\" + files[f] + "></audio>";
 		$("#audio-players").append(audioString);
 	}
 }
